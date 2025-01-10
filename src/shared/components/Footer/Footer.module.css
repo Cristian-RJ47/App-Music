@@ -1,0 +1,55 @@
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logoSection .ftitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logoSection .fsubtitle {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.linksSection {
+    display: flex;
+    gap: 15px;
+}
+
+.linksSection a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.linksSection a:hover {
+    color: #d12525;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialMedia a {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #d12525;
+    transform: scale(1.2);
+}

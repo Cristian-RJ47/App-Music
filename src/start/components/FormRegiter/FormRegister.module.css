@@ -1,0 +1,14 @@
+.container{
+    width: 60%;
+    height: 87vh;
+    margin: auto;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .container{
+        width: 80%;
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+}

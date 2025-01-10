@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+:root {
+    --color1: #0c443a;
+    --color2: #d12525;
+    --degradado: linear-gradient(90deg, var(--color2), var(--color1));
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background: var(--color2);
+    color: white;
+}
+
+html {
+    font-size: 62.4%;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    background: #fafafa;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: var(--color1);
+}
+
+.header .logo span {
+    color: var(--color2);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 999;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--color1);
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--color2);
+}
+
+/* Botón para cerrar sesión */
+.navbar__logout {
+    background: #fafafa;
+    color: var(--color1);
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    font-weight: normal;
+}
+
+.navbar__logout:hover {
+    background: var(--color2);
+    color: #fafafa;
+}
+
+/* Menú Hamburguesa */
+.menuCheckbox {
+    display: none;
+}
+
+.menuIcon {
+    font-size: 3rem;
+    color: var(--color1);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .menuIcon {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1001;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    .navbar a, .navbar__logout {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        padding: 1rem 0;
+        font-weight: normal;
+    }
+
+    .navbar__logout {
+        cursor: pointer;
+    }
+
+    .show {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 49%;
+    }
+}

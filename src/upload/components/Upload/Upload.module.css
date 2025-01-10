@@ -1,0 +1,79 @@
+.sectionUpload{
+    width: 100%;
+    min-height: 87vh;
+
+    & .form{
+        width: 60%;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 5rem;
+
+        & .titleLoad{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        & .descriptionLoad{
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        & .inputTitle{
+            width: 100%;
+            padding: 1rem;
+            border-radius: 5px;
+            border: 1px solid #0c443a;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #0c443a;
+        }
+
+        & .inputFile{
+            width: 100%;
+            padding: 1rem;
+            border-radius: 5px;
+            border: 1px solid #0c443a;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #0c443a;
+        }
+
+        & .buttonLoad{
+            width: 100%;
+            padding: 1rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #0c443a;
+            margin-top: 1.5rem;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+            &:hover{
+                background-color: #d12525;
+            }
+        }
+
+        & .errosMjs{
+            width: 100%;
+            color: #d12525;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}
+
